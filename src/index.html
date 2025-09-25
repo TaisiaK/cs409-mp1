@@ -5,9 +5,161 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header></header>
+        <nav class="nav-bar" id="navb">
+            <a href="#section1" class="butin">Intro</a>
+            <a href="#section2" class="butin">Chapters</a>
+            <a href="#section3" class="butin">Carousel</a>
+            <a href="#section4" class="butin">Learning Objectives</a>
+            <a href="#section5" class="butin">Sources</a>
+        </nav>
+        <div id="section1" class="background-video">
+            <video autoplay muted loop id="repl-vid">
+                <source src="assets/ezgif-4c65b44f548830.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-top">
+            <h2>A summary of content from the past week in MCB 450!</h2>
+        </div>
+        <div id="section2" class="row-flex">
+            <div class="multi-col"> 
+                <p>Chapter 33: The Structure of Nucleic Acids: DNA and RNA</p>
+            </div>
+            <div class="multi-col">
+                <p>Chapter 34: DNA Replication</p>
+            </div>
+            <div class="multi-col">
+            <p>Chapter 35: Adaptive DNA Repair and Recombination</p>
+            </div>
+        </div>
+        <div id="section3" class="carousel">
+            <div class="img-card fade"> <img src="assets/this.png" alt="1"> </div>
+            <div class="img-card fade"> <img src="assets/is.png" alt="2"> </div>
+            <div class="img-card fade"><img src="assets/a.png" alt="3"></div>
+            <div class="img-card fade"><img src="assets/Carousel.png" alt="4"></div>
+            <button class="prev" onclick="moveSlides(-1)"><</button>
+            <button class="next" onclick="moveSlides(1)">></button>
+        </div>
+        <div id="section4" class="modal-flex">
+            <button class="model-btn">Central dogma of molecular biology and exceptions to the orginal model</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 1</p>
+                </div>
+            </div>
+            <button class="model-btn">Essential features of DNA structure</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 2</p>
+                </div>
+            </div>
+            <button class="model-btn"> How intercalating agents inhibit DNA replication</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 3</p>
+                </div>
+            </div>
+            <button class="model-btn">List the basic structural components of nucleosome</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 4</p>
+                </div>
+            </div>
+            <button class="model-btn">Describe enzymes involved in DNA replication and their roles</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 5</p>
+                </div>
+            </div>
+            <button class="model-btn">The difference between leading and lagging strand synthesis</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 6</p>
+                </div>
+            </div>
+            <button class="model-btn">Reactions catalyzed by DNA polymerase and their key features</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">Template and primer definitions and relation to DNA polymerase</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 8</p>
+                </div>
+            </div>
+            <button class="model-btn">Relate the 3' -+ 5' nuclease activity of DNA polymerases to the fidelity of DNA</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">Replication by proofreading</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">How do topoisomerase/gyrase inhibitors can act as antibacterial agents and anticancer agents (include topoisomerase targets of these drugs)</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">DNA or RNA synthesis inhibitors as drugs and their potential side-effects</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">How does telomerase makes DNA of defined sequence in the absence of a DNA template</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">DNA synthesis catalyzed by reverse transcriptase</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+            <button class="model-btn">Difference between transition and transversion mutation</button>
+            <div class="modal"> 
+                <div class="modal-content">
+                    <span class="close-m">&times;</span>
+                    <p>This is going to have the answer later 7</p>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="background-image">
+            <div class="vertically-centered">
+                <h2>All of the biochemistry concepts and information are from the textbook Biochemistry A Short Course, Fifth Edition or MCB 450 course slides. </h2>
+            </div>
+        </div>
+        <footer>
+            <p>Inclusion of social media icons will go here!!</p>
+            <a href="#" class="fa fa-twitter"></a>
+            <i class="fa-brands fa-github"></i>
+        </footer>
     </body>
 </html>
